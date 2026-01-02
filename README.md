@@ -74,6 +74,6 @@ uv run review-calendar kyrkoåret_2025.ics
 ## Kör utan att installera
 Så länge du har [uv](https://docs.astral.sh/uv/) och en API-nyckel kan du köra:
 ```
-uvx --from git+https://github.com/jonatanskogsfors/kyrkokalender create-calendar 2025
+uvx kyrkokalender 2025
 ```
 

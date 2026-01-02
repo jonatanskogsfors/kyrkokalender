@@ -1,7 +1,7 @@
 [project]
 name = "kyrkokalender"
 description = "Create calender files for full church years."
-version = "1.0.1"
+version = "1.0.2"
 readme = "README.md"
 license = { file = "LICENSE" }
 maintainers = [ { name = "Jonatan Skogsfors", email = "jonatan@skogsfors.net" } ]
@@ -39,6 +39,7 @@ dev = [
 package = true
 
 [project.scripts]
+kyrkokalender = "kyrkokalender.create_calendar:cli"
 create-calendar = "kyrkokalender.create_calendar:cli"
 review-calendar = "kyrkokalender.review_calendar:cli"
 
