@@ -1,10 +1,12 @@
 [project]
 name = "kyrkokalender"
 description = "Create calender files for full church years."
-version = "1.0.0"
+version = "1.0.1"
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.14"
+maintainers = [ { name = "Jonatan Skogsfors", email = "jonatan@skogsfors.net" } ]
+authors = [ { name = "Jonatan Skogsfors", email = "jonatan@skogsfors.net" } ]
+requires-python = ">=3.11"
 dependencies = [
     "click>=8.3.1",
     "httpx>=0.28.1",
@@ -12,6 +14,20 @@ dependencies = [
     "pytz>=2025.2",
     "rich-click>=1.9.5",
 ]
+classifiers = [
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+urls.Documentation = "https://github.com/jonatanskogsfors/kyrkokalender"
+urls.Homepage = "https://github.com/jonatanskogsfors/kyrkokalender"
+urls.Issues = "https://github.com/jonatanskogsfors/kyrkokalender/issues"
+urls.Repository = "https://github.com/jonatanskogsfors/kyrkokalender"
 
 [dependency-groups]
 dev = [
@@ -28,6 +44,7 @@ review-calendar = "kyrkokalender.review_calendar:cli"
 
 [tool.ruff]
 line-length = 90
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["PL", "E", "F", "W", "I", "RUF", "N"]
