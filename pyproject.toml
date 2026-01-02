@@ -1,0 +1,33 @@
+[project]
+name = "kyrkokalender"
+description = "Create calender files for full church years."
+version = "1.0.0"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.14"
+dependencies = [
+    "click>=8.3.1",
+    "httpx>=0.28.1",
+    "icalendar>=6.3.2",
+    "pytz>=2025.2",
+    "rich-click>=1.9.5",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.0.1",
+    "ruff>=0.8.1",
+]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+create-calendar = "kyrkokalender.create_calendar:cli"
+review-calendar = "kyrkokalender.review_calendar:cli"
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint]
+select = ["PL", "E", "F", "W", "I", "RUF", "N"]
