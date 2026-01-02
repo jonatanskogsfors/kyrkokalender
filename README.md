@@ -58,8 +58,10 @@ uv run create-calendar 2025
 ```
 
 #### API-nyckel
-För att använda skriptet behöver du en API-nyckel. Titta på [Kyrkoårets bibeltexter](https://www.svenskakyrkan.se/kyrkoaret/bibeltexter)
-med Developer tools i din webbläsare och kika på hur `webapi/api-v2/churchcalendar/` anropas.
+För att använda skriptet behöver du en API-nyckel. Detta kan skapas kostnadsfritt på [api.svenskakyrkan.se](https://api.svenskakyrkan.se).
+
+Den fiffige kan även kika på [Kyrkoårets bibeltexter](https://www.svenskakyrkan.se/kyrkoaret/bibeltexter)
+med Developer tools i sin webbläsare och kika på hur `webapi/api-v2/churchcalendar/` anropas...
 
 #### Cachning
 För att inte anropa Svenska kyrkans servrar i onödan cachas resultatet i datorns temp-mapp. Använd flaggan 
